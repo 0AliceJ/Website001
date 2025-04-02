@@ -12,7 +12,6 @@
         -->
         <!--style="font-size:#px;" changes size for this specific heading-->
         <h1 style="font-size:60px;">This is a Heading (1st)</h1>
-        <h1>This heading is the default h1 size.</h1>
         <!--paragraphs always start on new lines w/ whits space before and after-->
         <p>This is a paragraph.</p>
         <!-- title attribute = pop-up on hover DOESN'T WORK FOR SOME REASON-->
@@ -25,11 +24,16 @@
         ignores it.</p>
         <!--br = line break-->
         <p>This is a-<br> paragraph with a line break.</p>
+
         <!--hr = horizontal rule that separates the page horizontally, an empty tag (no end tag)-->
         <hr>
+        <h1 style="text-align: center;">All Heading Types</h1>
+        <br>
         <!--all types of headings-->
+        <h1>This heading is the default h1 size.</h1>
         <!--font-family = font-->
         <h2 style="font-family:cursive;">This is heading 2</h2>
+        <h2>This is also heading 2</h2>
         <!--color = colour of main element-->
         <h3 style="color:red;">This is heading 3</h3>
         <!--background-color = colour of background of element-->
@@ -39,7 +43,10 @@
         <h5>This is also heading 5.</h5>
         <!--URL = href-->
         <h6>This is the last, least important heading.</h6>
+
         <hr>
+        <h1 style="text-align: center;">Embedded Miscellaneous</h1>
+        <br>
         <a href="https://www.w3schools.com/html/html_basic.asp">This is the link to basic HTML tags</a>
         <!--images where src = direct image link and alt = alternative text-->
         <!--
@@ -53,8 +60,54 @@
         -->
         <!--alt text when link breaks or screen reader-->
         <img src="https://media.istockphoto.com/id/1469618147/photo/full-moon-with-flower.jpg?s=612x612&w=0&k=20&c=KQiHxLCxdub4ZG-BqlDhwv_BCS51YY47Q4ZU16CcBaQ=" alt="moon shining under low light behing tree branches with red fruit" width="30%" height="142">
-        <!--pre = prefomatted text, in fixed-width font, preserves spaces and line breaks-->
+        
         <hr>
+        <!--html has 140 standard colour names-->
+        <h1 style="text-align: center;">Colours</h1>
+        <br>
+        <!--background-colors-->
+        <h1 style="background-color:dodgerblue;">DodgerBlue Heading</h1>
+        <p style="background-color: tomato;">This colour is Tomato.</p>
+        <br>
+        <!--color = text colour-->
+        <h2 style="color: saddlebrown;">This is SaddleBrown</h2>
+        <p style="color: aquamarine;">This is Aquamarine.</p>
+        <p style="color: greenyellow;">This is GreenYellow.</p>
+        <br>
+        <!--border = border around element, line-width -> line-style -> color-->
+        <!-- line styles not displayed: 
+         none = no border shown, lowest priority if any conflicting border
+         hidden = no border shown, highest priority if any conflicting border-->
+        <h3 style="border: 10px solid mediumseagreen;">This is a Solid MediumSeaGreen Border</h3>
+        <h4 style="border: 3px dotted violet;">This is a Dotted Violet Border</h4>
+        <h1 style="border: 1px dashed midnightblue;">This is a Dashed MidnightBlue Border</h1>
+        <h5 style="border: 7px groove hotpink;">This is a Groove HotPink Border</h5>
+        <h6 style="border: 7px ridge crimson;">This is a Ridge Crimson Border</h6>
+        <p style="border: 15px inset beige;">This is an Inset Beige Border.</p>
+        <p style="border: 9px outset coral;">This is an Outset Coral Border.</p>
+        <!--line-style/border-style double: adds up to set border-width (WILL NEED FURTHER INFO)-->
+        <p style="border: 20px double blue;"> This is a Double Blue Border.</p>
+
+        <hr>
+        <!-- html colours can be:
+         named
+         RGB
+         HEX
+         HSL
+         RGBA
+         HSLA
+        -->
+        <p style="background-color: rgb(255, 99, 71);">rgb(255, 99, 71)</p>
+        <p style="background-color: #ff6347;">#ff6347</p>
+        <p style="background-color: hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</p>
+        <!--"a" channels = alpha channels, transparency control-->
+        <p style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</p>
+        <p style="background-color: hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</p>
+
+
+        <hr>
+        <h1 style="text-align: center;">Text-Alignment</h1>
+        <br>
         <!--text-align = aligns text, can be: left, right, center-->
         <h1 style="text-align:center;">Centered Heading</h1>
         <p style="text-align:center;">Centered paragraph.</p>
@@ -62,7 +115,10 @@
         <p style="text-align:left;">Left aligned paragraph.</p>
         <h1 style="text-align:right;">Right Aligned Heading</h1>
         <p style="text-align:right;">Right aligned paragraph.</p>
+
         <hr>
+        <h1 style="text-align: center;">Text Markdown</h1>
+        <br>
         <!--b = bold text-->
         <b>This text is bold.</b>
         <!--strong = important , typically bolded-->
@@ -83,7 +139,8 @@
         <sub>This is in subscript, but may look weird out of context.</sub>
         <!--sup = superscript text, 1/2 character above normal line, sometimes in smaller font-->
         <sup>This is superscript, but it may look even weirder beside the previous line.</sup>
-        <hr>
+
+        <br>
         <!--examples of text formatting below-->
         <p> This is an <em>example</em> of how the <strong>formatting</strong> can be used <mark>inside OR outside</mark> a paragraph. It's almost as if <del>I can see you</del> I'm putting <ins>this</ins> to use for real. Remember to drink H<sub>2</sub>O and to cite your work!<sup>[1]</sup><small>(pretend like that's a link lol)</small></p>
 
@@ -91,7 +148,8 @@
         <p>Size can change using <sup>sup,</sup><small> small,</small> or <sub>sub.</sub> <small>ISN'T THIS WEIRD TO SEE?</small> Since it's the same size as regular text or even <small>smaller.</small></p>
         
         <p>Don't forget about the <mark>mark,</mark> <ins>ins,</ins> or <del>del</del> elements!</p>
-        <hr>
+
+        <br>
         <p>
             This is a poem,
 
@@ -99,6 +157,7 @@
 
             It will display as a paragraph.
         </p>
+        <!--pre = prefomatted text, in fixed-width font, preserves spaces and line breaks-->
         <pre>
             This is a poem,
 
@@ -106,7 +165,12 @@
 
             It will display a   formatted poem.
         </pre>
+        <!--you can comment inside lines of code too!-->
+        <p>Hey come close, I have a secret. <small>Did you know that...</small><!--my favourite colour is indigo?--> Cool, right?</p>
+
         <hr>
+        <h1 style="text-align: center;">Other Text Formatting</h1>
+        <br>
         <!--blockquote = usually indented, a large quote-->
         <p>Imagine my surprise when he said, <blockquote>Lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet. Lorem ipsum dolor amet, lorem ipsum dolor amet lorem ipsum dolor amet.</blockquote> Amirite?</p>
         <!--q = short quote, usually inserts quotation marks around-->
