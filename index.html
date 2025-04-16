@@ -7,11 +7,19 @@
     </head>
     <!--for all visible things in website-->
     <body>
+        <h1 style="text-align: center;">Tutorial Website</h1>
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+        <button>Button</button>
+        <hr>
+        
         <!--    <tagname style="property:value;">   
-            property and value are CSS properties and values
-        -->
+        property and value are CSS properties and values-->
         <!--style="font-size:#px;" changes size for this specific heading-->
-        <h1 style="font-size:60px;">This is a Heading (1st)</h1>
+        <h1 style="font-size:60px;">This is a Heading (1st, 60px)</h1>
         <!--paragraphs always start on new lines w/ whits space before and after-->
         <p>This is a paragraph.</p>
         <!-- title attribute = pop-up on hover DOESN'T WORK FOR SOME REASON-->
@@ -28,7 +36,6 @@
         <!--hr = horizontal rule that separates the page horizontally, an empty tag (no end tag)-->
         <hr>
         <h1 style="text-align: center;">All Heading Types</h1>
-        <br>
         <!--all types of headings-->
         <h1>This heading is the default h1 size.</h1>
         <!--font-family = font-->
@@ -45,26 +52,57 @@
         <h6>This is the last, least important heading.</h6>
 
         <hr>
-        <h1 style="text-align: center;">Embedded Miscellaneous</h1>
-        <br>
+        <h1 style="text-align: center;">Hyperlinks</h1>
+        <!--a = hyperlink text to display
+        href = url to connect-->
+        <!--hyperlinks don't have to be text!!-->
+        <!--
+        unvisited link = underlined + blue
+        visited link = underlined + purple
+        active link = underlined + red-->
         <a href="https://www.w3schools.com/html/html_basic.asp">This is the link to basic HTML tags</a>
+        <!--target attribute = specifies how link should be opened
+        _self = in exact same tab (can open as simulated tab)
+        _blank = in new tab
+        _parent = in parent frame(?) (similar to _self and _top, but like _top, open overrides current tab)
+        _top = in full body of window(?)-->
+        <a href="https://www.w3schools.com/html/html_links.asp" target="_blank">Link to Hyperlink Tutorial on W3 Schools</a>
+        <p>apparently "a" doesn't go to a new line every instance</p>
+        <!--Absolute URLs vs. Relative URLs
+        absolute = full web address
+        relative = w/o "https://www." part-->
+        <h4>Absolute URLs</h4>
+        <p><a href="https://www.w3.org/">W3C</a></p>
+        <p><a href="https://www.google.com/">Google</a></p>
+        <h4>Relative URLs</h4>
+        <p><a href="html_images.asp">HTML Images</a> <-- Idk where that's supposed to lead to</p>
+        <p><a href="/css/default.asp">CSS Tutorial</a> <-- also dunno where that's supposed to go</p>
+        <!--Images and buttons can be used as links-->
+        <h4>Images as Links</h4>
+        <a href="default.asp">
+            <img src="smiley.gif" alt="HTML Tutorial" style="width: 42px; height: 42px;">
+        </a><p>^^ broken links</p>
+
+        
+
+        <hr>
+        <h1 style="text-align: center;">Images</h1>
         <!--images where src = direct image link and alt = alternative text-->
         <!--
         absolute URLs = has domain name in link
         relative URLS (to current page or domain) = no domain name included (won't break when domain changes)
-            beings w/ slash (/) = relative to domain
+        beings w/ slash (/) = relative to domain
         -->
         <!--width and height
         default w/o suffix = in pixels
         can do % instead
         -->
         <!--alt text when link breaks or screen reader-->
-        <img src="https://media.istockphoto.com/id/1469618147/photo/full-moon-with-flower.jpg?s=612x612&w=0&k=20&c=KQiHxLCxdub4ZG-BqlDhwv_BCS51YY47Q4ZU16CcBaQ=" alt="moon shining under low light behing tree branches with red fruit" width="30%" height="142">
+        <img src="https://media.istockphoto.com/id/1469618147/photo/full-moon-with-flower.jpg?s=612x612&w=0&k=20&c=KQiHxLCxdub4ZG-BqlDhwv_BCS51YY47Q4ZU16CcBaQ=" alt="moon shining under low light behind dark tree branches with red fruit" width="30%" height="142">
         
         <hr>
         <!--html has 140 standard colour names-->
         <h1 style="text-align: center;">Colours</h1>
-        <br>
         <!--background-colors-->
         <h1 style="background-color:dodgerblue;">DodgerBlue Heading</h1>
         <p style="background-color: tomato;">This colour is Tomato.</p>
@@ -97,23 +135,28 @@
          RGBA
          HSLA
         -->
+        <h2 style="text-align: center;">Types of Colour Values</h2>
+        <h4>Red Green Blue: (red channel, green channel, blue channel) (values from 0 to 255)</h4>
         <p style="background-color: rgb(255, 99, 71);">rgb(255, 99, 71)</p>
+        <h4>Hexadecimal: #rrggbb (values from 00 to ff, 0 to 9 -> a -> f)</h4>
         <p style="background-color: #ff6347;">#ff6347</p>
+        <h4>Hue Saturation Lightness: (hue channel, saturation channel, lightness channel) (hue values from 0 to 360, other values from 0% to 100%)</h4>
         <p style="background-color: hsl(9, 100%, 64%);">hsl(9, 100%, 64%)</p>
         <!--"a" channels = alpha channels, transparency control-->
+        <h4>RGBA: (red, green, blue, alpha channel) (alpha values from 0.0 to 1.0)</h4>
         <p style="background-color: rgba(255, 99, 71, 0.5);">rgba(255, 99, 71, 0.5)</p>
+        <h4>HSLA: (hue, saturation, lightness, alpha channel) (alpha values from 0.0 to 1.0)</h4>
         <p style="background-color: hsla(9, 100%, 64%, 0.5);">hsla(9, 100%, 64%, 0.5)</p>
 
 
         <hr>
         <h1 style="text-align: center;">Text-Alignment</h1>
-        <br>
         <!--text-align = aligns text, can be: left, right, center-->
-        <h1 style="text-align:center;">Centered Heading</h1>
+        <h2 style="text-align:center;">Centered Heading</h1>
         <p style="text-align:center;">Centered paragraph.</p>
-        <h1 style="text-align:left;">Left Aligned Heading</h1>
+        <h2 style="text-align:left;">Left Aligned Heading</h1>
         <p style="text-align:left;">Left aligned paragraph.</p>
-        <h1 style="text-align:right;">Right Aligned Heading</h1>
+        <h2 style="text-align:right;">Right Aligned Heading</h1>
         <p style="text-align:right;">Right aligned paragraph.</p>
 
         <hr>
