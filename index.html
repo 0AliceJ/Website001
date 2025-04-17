@@ -116,7 +116,26 @@
         -->
         <!--alt text when link breaks or screen reader-->
         <img src="https://media.istockphoto.com/id/1469618147/photo/full-moon-with-flower.jpg?s=612x612&w=0&k=20&c=KQiHxLCxdub4ZG-BqlDhwv_BCS51YY47Q4ZU16CcBaQ=" alt="moon shining under low light behind dark tree branches with red fruit" width="30%" height="142">
-        
+        <!--images can be placed inside a <p> tag-->
+        <!--float = tells image in paragraph where it should be in relation to the text, right or left-->
+        <h4>Floating Images</h4>
+        <p><img src="https://preview.redd.it/our-orange-girl-sticks-her-tongue-out-frequently-is-this-v0-2aigumfbt2ha1.jpeg?width=1920&format=pjpg&auto=webp&s=b60dddaebe30aa68395ee61c9c44fa523ac6d77b" alt="horizontally distorted cat sticking tongue out" style="float: right;width: 25%;">Isn't this cat very cute? Lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet. Lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet. Lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet.</p>
+        <p><img src="https://preview.redd.it/our-orange-girl-sticks-her-tongue-out-frequently-is-this-v0-2aigumfbt2ha1.jpeg?width=1920&format=pjpg&auto=webp&s=b60dddaebe30aa68395ee61c9c44fa523ac6d77b" alt="horizontally distorted cat sticking tongue out" style="float: left;width: 25%;">Isn't this cat very cute? Lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet. Lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet. Lorem ipsum dolor amet lorem ipsum dolor amet lorem ipsum dolor amet.</p>
+        <br>
+        <h4>Animated Images</h4>
+        <!--it appears text-align doesn't work on images-->
+        <img src="https://media.tenor.com/K9_q0nhLQyEAAAAM/plink-cat.gif" alt="GIF of calico cat licking the screen" style="width: 30%;">
+
+        <h2>Image Maps</h2>
+        <h6>(areas of image are interactive)</h6>
+        <img src="https://m.media-amazon.com/images/I/81br6SJa9OL.jpg" alt="round coffee table in front of pill-shaped sofa on a white rug. an open magazine, pine green coffee cup and saucer, and dried grain stalks in a white vase sit on the table" style="width: 600px; height: 600px;" usemap="#coffeetable"><!--usemap + # creates a relationship between map and img-->
+        <map name="coffeetable"><!--name must be same as usemap string-->
+            <area shape="circle" coords="400, 260, 40" href="coffee.htm"><!--coords zero from top left of img-->
+            <!--circle coords are x-coord, y-coord, radius from centre-->
+            <area shape="rect" coords="200, 0, 365, 50" href="modernart.htm"><!--rect coords are topleftx-coord, toplefty-coord, botrightx-coord, botrighty-coord-->
+        </map>
+
+
         <hr>
         <!--html has 140 standard colour names-->
         <h1 id="colours" style="text-align: center;">Element Colours</h1>
