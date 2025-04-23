@@ -38,6 +38,87 @@
 
         <!--hr = horizontal rule that separates the page horizontally, an empty tag (no end tag)-->
         <hr>
+        <!--div = group of code set by programmer, takes up full width of screen, container-->
+        <div style="width: 50%; margin: auto; background-color: beige;">
+            <h2>Div Element</h2>
+            <!--div will create new lines before and after-->
+            <p>Lorem ipsum sit<div>(This is in a div element,)</div> dolor amet. </p>
+        </div>
+        <!--float style vertical sectioning-->
+        <div>
+            <!--divs can be put within divs to further section the space-->
+            <div style="background-color: red;width: 33%; float: left;">
+                <h4>Bleh</h4>
+                <p>text here.</p>
+                <p>Wow I can't think of anything to say.</p>
+            </div>
+            <div style="background-color: yellow;width: 33%; float: left;">
+                <h4>Bleh</h4>
+                <p>text here.</p>
+                <p>Wow I can't think of anything to say.</p>
+            </div>
+            <div style="background-color: green;width: 33%; float: left;">
+                <h4>Bleh</h4>
+                <p>text here.</p>
+                <p>Wow I can't think of anything to say.</p>
+            </div>
+            <!--element needed below float property to avoid element from clipping over other elements-->
+            <p>Notice how his mouth never moves, almost.</p>
+        </div>
+        <!--inline-block vertical sectioning-->
+        <div>
+            <!--doesn't start new lines w/ inline-block + displayed side by side-->
+            <div style="width: 25%; display: inline-block; background-color: magenta;">
+                <h4>This is a Heading</h4>
+                <p>I still can't think of anything to say.</p>
+                <p>blah blah blah, truth truth truth, s'help ya god.</p>
+            </div>
+            <div style="width: 25%; display: inline-block; background-color: lime;">
+                <h4>This is a Heading</h4>
+                <p>I still can't think of anything to say.</p>
+                <p>blah blah blah, truth truth truth, s'help ya god.</p>
+            </div>
+            <div style="width: 25%; display: inline-block; background-color: cyan;">
+                <h4>This is a Heading</h4>
+                <p>I still can't think of anything to say.</p>
+                <p>blah blah blah, truth truth truth, s'help ya god.</p>
+            </div>
+            <p>^^look, there's space!^^</p>
+        </div>
+        <!--flex method vertical sectioning-->
+        <div style="display: flex">
+            <!--flex property not inherent to divs inside div but div containing divs-->
+            <div style="width: 30%; background-color: violet;">
+                <h4>heading</h4>
+                <p>I can no longer be bothered.</p>
+            </div>
+            <div style="width: 30%; background-color: palegreen;">
+                <h4>heading</h4>
+                <p>I can no longer be bothered.</p>
+            </div>
+            <div style="width: 30%; background-color: palegoldenrod;">
+                <h4>heading</h4>
+                <p>I can no longer be bothered.</p>
+            </div>
+        </div>
+        <!--grid style vertical sectioning-->
+        <div style="display: grid; grid-template-columns: 33% 33% 33%;">
+            <!--grid property + grid-template columns property inside parent div-->
+            <div style="background-color: cornflowerblue;">
+                <h4>cats are cool</h4>
+                <p>text here.</p>
+            </div>
+            <div style="background-color: deeppink;">
+                <h4>cats are cool</h4>
+                <p>text here.</p>
+            </div>
+            <div style="background-color: gainsboro;">
+                <h4>cats are cool</h4>
+                <p>text here.</p>
+            </div>
+        </div>
+        <br>
+        <hr>
         <!--id = like a variable name, used to identify a specific piece of code
         can create links to specific parts of the page, like a bookmark-->
         <h1 id="headings" style="text-align: center;">All Heading Types</h1>
