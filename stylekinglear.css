@@ -1,0 +1,43 @@
+body {
+    background-color: dimgrey;
+}
+h1 {
+    text-align: center;
+}
+h4 {
+    text-align: center;
+}
+
+/*classes*/
+.subtitle {
+    opacity: 0.7;
+    padding-top: 0%;
+    padding-bottom: 0%;
+}
+.menu {
+    position: sticky;
+    top: 0;
+    background-color: aliceblue;
+    padding-top: 5px;
+}
+/*collapsible menu*/
+.collapsible {
+    background-color: lightgrey;
+    color: black;
+    padding: 10px;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    text-align: center;
+}
+.active, .collapsible:hover {
+    background-color: darkgrey;
+}
+/*collapsible menu content*/
+.content {
+    background-color: white;
+    padding: 0 10px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.2s ease-out;
+}
