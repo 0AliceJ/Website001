@@ -18,6 +18,9 @@ h1 {
     background-color: aliceblue;
     padding-top: 5px;
 }
+.act { 
+    padding: 5px 0;
+}
 /*collapsible menu*/
 .collapsible {
     background-color: lightgrey;
@@ -30,13 +33,15 @@ h1 {
 }
 .active, .collapsible:hover {
     background-color: darkgrey;
+    position: sticky;
+    top: 120px;
 }
 /*collapsible menu content*/
 .content {
     background-color: white;
-    padding: 0 10px;
+    padding: 0 0px;
     max-height: 0;
     overflow: hidden;
     transition: max-height 0.2s ease-in-out;/*transition for opening + closing*/
-    text-wrap: wrap;
+    text-align: left;
 }
