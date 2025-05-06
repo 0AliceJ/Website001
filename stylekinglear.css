@@ -41,7 +41,19 @@ h1 {
     background-color: white;
     padding: 0 0px;
     max-height: 0;
-    overflow: hidden;
+    overflow-x: auto;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    word-break: keep-all;
+    text-wrap: wrap;
     transition: max-height 0.2s ease-in-out;/*transition for opening + closing*/
     text-align: left;
+}
+.content > p {/* ">" chooses selectors within selectors */
+    padding: 0 2.5em;
+}
+
+.summary {/*NOT FINISHED, WANNA MAKE IT RIGHT OF THE ACT DIVS*/
+    float: right;
+    left: 100px;
 }
