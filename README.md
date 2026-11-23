@@ -14,4 +14,10 @@ This is a casual website to primarily test my HTML, CSS, and Javascript.
 
 **Karaoke Server**:
 - unfinished
-- database to store a song list?
+- database to store a song name to a list
+- borrows code from my previous Quotes Database project (hackathon)
+
+**Website Version 2**:
+- ongoing
+- to be the future main landing page
+- about me + my projects
